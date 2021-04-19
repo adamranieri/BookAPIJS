@@ -7,6 +7,7 @@ const { NODE_ENV } = require('./config')
 
 const app = express()
 
+// determines logging format based on env mode
 const morganOption = (NODE_ENV === 'production')
   ? 'tiny'
   : 'common';
@@ -18,6 +19,11 @@ app.use(cors())
 app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
+
+app.get('/books', (req, res) => {
+  res.send('Returning all books')
+})
+
 
 
  app.use(function errorHandler(error, req, res, next) {
