@@ -1,0 +1,9 @@
+{
+    "migrationDirectory": "migrations",
+    "driver": "pg",
+    "host": "35.232.230.126",
+    "port": 5432,
+    "database": "nodebooks",
+    "username": "revauser",
+    "password": "revabooks"
+}

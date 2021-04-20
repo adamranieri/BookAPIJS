@@ -1,6 +1,13 @@
 export default class Book{
+    bookId;
+    title;
+    author;
+    condtion;
+    available;
+    return;
+
     constructor(id, title, author, condition, available, returnDate){
-        this.id = id;
+        this.bookId = id;
         this.title = title;
         this.author = author;
         this.condition = condition || 1;
