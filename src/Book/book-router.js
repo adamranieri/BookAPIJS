@@ -15,6 +15,9 @@ bookRouter
           })
           .catch(next)
     })
+    .post(jsonBodyParser, (req, res, next) => {
+        
+    })
 
 
 module.exports = bookRouter
